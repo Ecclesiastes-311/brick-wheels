@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+/*Layouts*/
+.heading{
+    background-color: #ff6b6b;
+    text-align: center;
+    color: #fff;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+
+.links{
+    background-color: #ffd43b;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    border-bottom: solid 5px #000;
+}
+
+.goal-pic{
+    display: flex;
+    align-items: center;
+    margin-top: 125px;
+    margin-left: 140px;
+}
+
+.goal{
+    font-size: 32px;
+    width: 60%;
+    margin-bottom: 32px;
+}
+
+/*links*/
+.link:link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.link:visited{
+    color: #fff;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.donate-txt:link{
+    text-decoration: none;
+    color: #000;
+}
+
+.donate-txt:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+.donate-txt:hover{
+    text-decoration: underline;
+}
+
+.learn-more-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.learn-more-link:hover{
+    text-decoration: underline;
+}
+
+/*Elements*/
+body{
+    border-bottom: #ff6b6b solid 15px;
+}
+
+h2{
+    font-size: 72px;
+    padding-top: 10px;
+}
+
+.subtitle-text{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.brief-summary{
+    margin: 20px;
+    animation-duration: 2s;
+    animation-name: text-appearY;
+}
+
+.description{
+    font-size: 24px;
+    width: 1000px;
+    margin-bottom: 30px;
+    animation-duration: 2s;
+    animation-name: text-appearY;
+}
+
+.percent{
+    color: green;
+    font-size: 32px;
+}
+
+.btn-learn{
+    border-radius: 25px;
+    width: 250px;
+    height: 60px;
+    background-image: linear-gradient(#6741d9, #e03131);
+    box-shadow: 2px 2px 5px #495057;
+    margin-bottom: 32px;
+    transition: 150ms ease;
+}
+
+.btn-learn:hover{
+   scale: 1.5;
+}
+
+.progress-bar-title{
+    font-size: 54px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 100px;
+}
+
+.progress-bar{
+    -webkit-appearance: none; /* Remove default WebKit styling */
+    appearance: none; /* Remove default styling for other browsers */
+    height: 50px;
+    width: 75%;
+    background-color: #fff;
+    border: 4px solid black;
+    border-radius: 25px;
+    margin: 32px;
+    position: absolute;
+    top: 88%;
+    left: 9%;
+}
+
+/* Styling the unfilled portion for WebKit/Blink browsers */
+.progress-bar::-webkit-progress-bar{
+    background-color: #fff; /* Color of the unfilled bar */
+    border-radius: 25px;
+}
+
+/* Styling the filled portion for WebKit/Blink browsers */
+.progress-bar::-webkit-progress-value{
+    background-color: #00ff00; /* Color of the filled bar */
+    border-radius: 25px;
+}
+
+/*Having the percentage*/
+.progress-bar::after{
+    content: attr(data-label);
+    font-size: 58px;
+    position: absolute;
+    top: 280px;
+    left: 210px;
+    animation-duration: 3s;
+    animation-name: text-appearY2;
+    animation-timeline: view();
+}
+
+.goal-title{
+    margin-bottom: 8px;
+    font-size: 58px;
+    animation-duration: 3s;
+    animation-name: text-appearY2;
+    animation-timeline: view();
+}
+
+.current-title{
+    margin-bottom: 24px;
+    font-size: 58px;
+    animation-duration: 3s;
+    animation-name: text-appearY2;
+    animation-timeline: view();
+}
+
+.percent2{
+    font-size: 58px;
+    position: absolute;
+    top: 131.5%;
+    left: 27.5%;
+    animation-duration: 3s;
+    animation-name: text-appearY2;
+    animation-timeline: view();
+}
+
+.kid-pic{
+    animation-duration: 3s;
+    animation-name: text-appearY2;
+    animation-timeline: view();
+}
+
+/*Animations*/
+@keyframes text-appearY{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-appearY2{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    20%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

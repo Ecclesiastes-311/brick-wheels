@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+/*Layouts*/
+.heading{
+    background-color: #ff6b6b;
+    text-align: center;
+    color: #fff;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+
+.links{
+    background-color: #ffd43b;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon{
+  fill: #fff;
+}
+
+.description-and-img{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.contact{
+    display: flex;
+    margin: 24px;
+    margin-bottom: 48px;
+    margin-left: 75px;
+}
+
+.words{
+    margin-right: 25%;
+}
+
+.big-div{
+    border-bottom: #000 solid 8px;
+    margin-bottom: 24px;
+}
+
+/*links*/
+.link:link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.link:visited{
+    color: #fff;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.donate-txt:link{
+    text-decoration: none;
+    color: #000;
+}
+
+.donate-txt:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+.donate-txt:hover{
+    text-decoration: underline;
+}
+
+.learn-more-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.learn-more-link:hover{
+    text-decoration: underline;
+}
+
+.description-link:link{
+    color:blue;
+    text-decoration: none;
+}
+
+.description-link:hover{
+    text-decoration: underline;
+}
+
+.description-link:visited{
+    color:blue;
+}
+
+/*Elements*/
+body{
+  border-bottom: #ff6b6b solid 15px;
+}
+
+h2{
+  font-size: 72px;
+  padding: 10px;
+}
+
+p{
+    font-family: "Jost", sans-serif;
+}
+
+.subtitle-text{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.title{
+    margin: 20px;
+    animation-duration: 3s;
+    animation-name: text-appearX;
+}
+
+.description{
+    font-size: 24px;
+    padding: 36px;
+    animation-duration: 3s;
+    animation-name: text-appearX;
+}
+
+.logo-img{
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-name: spin;
+}
+
+.logo-img:hover{
+    animation-play-state: running;
+}
+
+.about-title{
+    margin: 32px;
+}
+
+.name{
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.name-subtitle{
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.founder-description{
+    margin-bottom: 12px;
+    font-size: 22px;
+    width: 700px;
+}
+
+.autoShowY{
+    animation-duration: 2s;
+    animation-name: text-appearY;
+    animation-timeline: view();
+}
+
+/*Animations*/
+@keyframes spin{
+    0%{
+
+    }
+
+    50%{
+        scale: 1.25;
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes text-appearX{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes text-appearY{
+    0%{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    20%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
